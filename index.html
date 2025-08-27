@@ -126,7 +126,22 @@
         }
         
         .country-flag {
-            font-size: 18px;
+            display: inline-block;
+            width: 20px;
+            height: 14px;
+            margin-right: 8px;
+            border-radius: 2px;
+            vertical-align: middle;
+        }
+        
+        .flag-ro { background: linear-gradient(to right, #003da5 33%, #fdd116 33%, #fdd116 66%, #ce1126 66%); }
+        .flag-ua { background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%); }
+        .flag-ru { background: linear-gradient(to bottom, white 33%, #0039a6 33%, #0039a6 66%, #d52b1e 66%); }
+        .flag-fr { background: linear-gradient(to right, #0055a4 33%, white 33%, white 66%, #ef4135 66%); }
+        .flag-us { background: linear-gradient(to right, #b22234, #ffffff); }
+        .flag-world { 
+            background: linear-gradient(45deg, #4a90e2, #7cb342, #f4b400, #db4437);
+            border-radius: 50%;
         }
         
         .job-date {
@@ -268,7 +283,8 @@
                         <div>
                             <div class="job-title">Technical Support Specialist</div>
                             <div class="company">
-                                🇷🇴 iSellMore SFA Solutions
+                                <span class="country-flag flag-ro"></span>
+                                iSellMore SFA Solutions
                             </div>
                         </div>
                         <div class="job-date">Oct 2024 - Present</div>
@@ -294,7 +310,8 @@
                         <div>
                             <div class="job-title">Service Desk Specialist</div>
                             <div class="company">
-                                🌍 Freelance
+                                <span class="country-flag flag-world"></span>
+                                Freelance
                             </div>
                         </div>
                         <div class="job-date">Mar 2007 - Present</div>
