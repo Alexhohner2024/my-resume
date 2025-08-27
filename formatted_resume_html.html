@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandru Babaian - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+            background: url('data:image/jpeg;base64,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') center/cover;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .summary {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .job-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-size: 16px;
+            color: #3498db;
+            margin-top: 2px;
+        }
+        
+        .job-date {
+            font-size: 14px;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .job-description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+        
+        .skills-list {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .language {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .school {
+            color: #3498db;
+            margin-top: 2px;
+        }
+        
+        .year {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .skill-list {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <div class="profile-photo"></div>
+            <h1 class="name">Alexandru Babaian</h1>
+            <p class="title">IT Support Analyst | Technical Support Specialist</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span> alex.babaian2008@gmail.com
+                </div>
+                <div class="contact-item">
+                    <span>📱</span> +40755741613
+                </div>
+                <div class="contact-item">
+                    <span>📍</span> Constanta, Romania
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary">
+                    IT Specialist with extensive experience in technical support for clients and digital solutions. Expert in problem diagnosis, software and hardware configuration and maintenance, as well as client training for IT product usage. Strong background in localization testing, quality assurance processes, and multilingual software validation across multiple platforms and operating systems.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Technical Support Specialist</div>
+                            <div class="company">iSellMore SFA Solutions</div>
+                        </div>
+                        <div class="job-date">Oct 2024 - Present</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Providing comprehensive technical support to multilingual clients</li>
+                            <li>Diagnosing and resolving complex user problems across different language versions</li>
+                            <li>Testing software localization accuracy for Romanian, Russian, and Ukrainian interfaces</li>
+                            <li>Identifying and reporting localization bugs using internal bug tracking systems</li>
+                            <li>Software and hardware configuration and maintenance for international users</li>
+                            <li>Training clients in IT product usage with multilingual documentation</li>
+                            <li>Documenting and reporting client requests with linguistic precision</li>
+                        </ul>
+                        <div class="skills-list">
+                            <strong>Technologies:</strong> VPN, OLAP, Networking, Office 365, Jira, iOS, Microsoft Exchange, Remote Desktop, Atlassian JIRA, Android Testing, Microsoft Teams, Monday CRM, Binotel
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Service Desk Specialist</div>
+                            <div class="company">Freelance</div>
+                        </div>
+                        <div class="job-date">Mar 2007 - Present</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Recording and resolving technical problems across multiple platforms and languages</li>
+                            <li>Processing service requests and providing technical support through various channels in multiple languages</li>
+                            <li>Testing web-based applications and mobile apps for localization accuracy</li>
+                            <li>Executing test cases to ensure linguistic and functional quality</li>
+                            <li>Planning and implementing IT changes with consideration for localization requirements</li>
+                            <li>Monitoring systems to prevent problems and investigating recurring localization issues</li>
+                            <li>Collaborating with international teams to resolve cross-language compatibility problems</li>
+                        </ul>
+                        <div class="skills-list">
+                            <strong>Technologies:</strong> Windows, Linux, VPN, Active Directory, Networking, Office 365, Windows Server, Microsoft Exchange, Google Docs, ServiceNow, Network Administration, Localization Testing
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Insurance Broker</div>
+                            <div class="company">PJSC "ETALON INSURANCE COMPANY"</div>
+                        </div>
+                        <div class="job-date">Jun 2015 - Present</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Supervise daily branch operations ensuring company standards compliance</li>
+                            <li>Manage and train teams to improve performance and customer satisfaction</li>
+                            <li>Develop and implement sales and marketing strategies</li>
+                            <li>Monitor branch performance through financial analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Insurance Broker</div>
+                            <div class="company">Destine Broker de Asigurare-Reasigurare</div>
+                        </div>
+                        <div class="job-date">Feb 2024 - Present</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Managing insurance policies and client relationships</li>
+                            <li>Processing multilingual documentation for international clients</li>
+                            <li>Quality assurance of translated insurance materials</li>
+                            <li>Sales and client communication in multiple languages</li>
+                        </ul>
+                        <div class="skills-list">
+                            <strong>Skills:</strong> Sales, Insurance, Auto Insurance, Life Insurance, Health Insurance, Communication & Negotiation, Multilingual Documentation
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Logistics Officer</div>
+                            <div class="company">Tulcea Humanitarian Logistics Hub</div>
+                        </div>
+                        <div class="job-date">Feb 2022 - Jul 2023</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Processing customs documents in multiple languages</li>
+                            <li>Managing humanitarian goods arrival and documentation</li>
+                            <li>Collaborating with international customs brokers</li>
+                            <li>Quality control of multilingual shipping documentation</li>
+                            <li>Coordinating loading/unloading operations</li>
+                        </ul>
+                        <div class="skills-list">
+                            <strong>Skills:</strong> Customs Operations, Document Management, International Logistics, Quality Control, Multilingual Documentation
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Maritime Agent</div>
+                            <div class="company">BIO-CONSULTING UKRAINE LTD</div>
+                        </div>
+                        <div class="job-date">Sep 2018 - Feb 2022</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Registered incoming and outgoing ship declarations</li>
+                            <li>Provided multilingual support for customs commissions</li>
+                            <li>Represented ship interests in international port operations</li>
+                            <li>Accompanied tourists with multilingual guide services</li>
+                            <li>Managed international maritime documentation</li>
+                        </ul>
+                        <div class="skills-list">
+                            <strong>Skills:</strong> Maritime Operations, Customs Declarations, International Relations, Tourism Services, Multilingual Support
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Head of Claims Department</div>
+                            <div class="company">PRIVATE JOINT STOCK COMPANY "KRONA"</div>
+                        </div>
+                        <div class="job-date">Mar 2008 - Jun 2015</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Evaluated and analyzed client damages with high accuracy</li>
+                            <li>Managed multilingual claim documentation and processing</li>
+                            <li>Ensured compensation calculations met policy terms</li>
+                            <li>Optimized internal processes and reduced resolution time</li>
+                            <li>Provided emergency support and clear communication to international clients</li>
+                            <li>Maintained high levels of customer satisfaction across language barriers</li>
+                        </ul>
+                        <div class="skills-list">
+                            <strong>Skills:</strong> Claims Assessment, Process Optimization, Client Communication, Quality Assurance, Multilingual Support, Microsoft Office Suite
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Languages</h2>
+                <div class="languages">
+                    <div class="language">
+                        <span><strong>Romanian</strong></span>
+                        <span>Native</span>
+                    </div>
+                    <div class="language">
+                        <span><strong>Ukrainian</strong></span>
+                        <span>Fluent</span>
+                    </div>
+                    <div class="language">
+                        <span><strong>Russian</strong></span>
+                        <span>Fluent</span>
+                    </div>
+                    <div class="language">
+                        <span><strong>French</strong></span>
+                        <span>Advanced</span>
+                    </div>
+                    <div class="language">
+                        <span><strong>English</strong></span>
+                        <span>Intermediate</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="degree">MBA - Erasmus for Young Entrepreneurs</div>
+                    <div class="school">Young Entrepreneurs Program</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree">Bachelor's Degree - Accounting and Audit</div>
+                    <div class="school">Odesa State Agrarian University</div>
+                    <div class="year">2007-2008</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree">Bachelor's Degree - Agronomy</div>
+                    <div class="school">Odesa State Agrarian University</div>
+                    <div class="year">2002-2007</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree">MBA - Viticulture</div>
+                    <div class="school">Domaine GUILLOT-BROUX</div>
+                    <div class="year">2004-2005</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Technical Support</h4>
+                        <div class="skill-list">
+                            Problem diagnosis, Software/Hardware configuration, Customer support, Remote support, Technical troubleshooting
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Localization & QA Testing</h4>
+                        <div class="skill-list">
+                            Localization testing, Cross-language QA, Bug identification and reporting, Test case execution, Linguistic quality assurance, Multilingual interface testing
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Technologies</h4>
+                        <div class="skill-list">
+                            Office 365, Atlassian JIRA, Monday CRM, Microsoft Teams, VPN, OLAP, Remote Desktop, ServiceNow
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Project Management</h4>
+                        <div class="skill-list">
+                            Team leadership, Strategic planning, Process optimization, Stakeholder coordination, Digital marketing
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Add print functionality
+        function printResume() {
+            window.print();
+        }
+        
+        // Add download as PDF functionality (requires browser's print to PDF)
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                printResume();
+            }
+        });
+    </script>
+</body>
+</html>
