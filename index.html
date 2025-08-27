@@ -92,6 +92,11 @@
             font-size: 16px;
             line-height: 1.8;
             color: #555;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         .job {
@@ -138,7 +143,14 @@
         .flag-ua { background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%); }
         .flag-ru { background: linear-gradient(to bottom, white 33%, #0039a6 33%, #0039a6 66%, #d52b1e 66%); }
         .flag-fr { background: linear-gradient(to right, #0055a4 33%, white 33%, white 66%, #ef4135 66%); }
-        .flag-us { background: linear-gradient(to right, #b22234, #ffffff); }
+        .flag-gb { 
+            background: linear-gradient(135deg, #012169 50%, transparent 50%), 
+                        linear-gradient(-135deg, #012169 50%, transparent 50%),
+                        linear-gradient(45deg, #c8102e 50%, white 50%),
+                        linear-gradient(-45deg, #c8102e 50%, white 50%);
+            background-size: 50% 50%;
+            background-position: top left, top right, bottom left, bottom right;
+        }
         .flag-world { 
             background: linear-gradient(45deg, #4a90e2, #7cb342, #f4b400, #db4437);
             border-radius: 50%;
@@ -276,7 +288,7 @@
             <section class="section">
                 <h2 class="section-title">Professional Summary</h2>
                 <p class="summary">
-                    IT Specialist with extensive experience in technical support for clients and digital solutions. Expert in problem diagnosis, software and hardware configuration and maintenance, as well as client training for IT product usage. Strong background in localization testing, quality assurance processes, and multilingual software validation across multiple platforms and operating systems.
+                    Multilingual IT Specialist with extensive experience in technical support for clients and digital solutions. Expert in problem diagnosis, software and hardware configuration and maintenance, as well as client training for IT product usage. Experience working with international clients and testing software functionality across different language versions.
                 </p>
             </section>
 
@@ -480,7 +492,7 @@
                         <span>Advanced</span>
                     </div>
                     <div class="language">
-                        <span><strong><span class="country-flag flag-us"></span>English</strong></span>
+                        <span><strong><span class="country-flag flag-gb"></span>English</strong></span>
                         <span>Intermediate</span>
                     </div>
                 </div>
@@ -488,6 +500,14 @@
 
             <section class="section">
                 <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <div class="degree">Certified Insurance Distributor and Reinsurer Manager</div>
+                    <div class="school">
+                        <span class="country-flag flag-ro"></span>
+                        Institute of Financial Studies (ISF)
+                    </div>
+                    <div class="year">2024</div>
+                </div>
                 <div class="education-item">
                     <div class="degree">MBA - Erasmus for Young Entrepreneurs</div>
                     <div class="school">
