@@ -143,13 +143,31 @@
         .flag-ua { background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%); }
         .flag-ru { background: linear-gradient(to bottom, white 33%, #0039a6 33%, #0039a6 66%, #d52b1e 66%); }
         .flag-fr { background: linear-gradient(to right, #0055a4 33%, white 33%, white 66%, #ef4135 66%); }
-        .flag-gb { 
-            background: linear-gradient(135deg, #012169 50%, transparent 50%), 
-                        linear-gradient(-135deg, #012169 50%, transparent 50%),
-                        linear-gradient(45deg, #c8102e 50%, white 50%),
-                        linear-gradient(-45deg, #c8102e 50%, white 50%);
-            background-size: 50% 50%;
-            background-position: top left, top right, bottom left, bottom right;
+        .flag-us { 
+            background: linear-gradient(to bottom, 
+                #b22234 0%, #b22234 7.7%, 
+                white 7.7%, white 15.4%, 
+                #b22234 15.4%, #b22234 23.1%, 
+                white 23.1%, white 30.8%, 
+                #b22234 30.8%, #b22234 38.5%, 
+                white 38.5%, white 46.2%, 
+                #b22234 46.2%, #b22234 53.9%, 
+                white 53.9%, white 61.6%, 
+                #b22234 61.6%, #b22234 69.3%, 
+                white 69.3%, white 77%, 
+                #b22234 77%, #b22234 84.7%, 
+                white 84.7%, white 92.4%, 
+                #b22234 92.4%);
+            position: relative;
+        }
+        .flag-us::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 54%;
+            background: #3c3b6e;
         }
         .flag-world { 
             background: linear-gradient(45deg, #4a90e2, #7cb342, #f4b400, #db4437);
@@ -288,7 +306,7 @@
             <section class="section">
                 <h2 class="section-title">Professional Summary</h2>
                 <p class="summary">
-                    Multilingual IT Specialist with extensive experience in technical support for clients and digital solutions. Expert in problem diagnosis, software and hardware configuration and maintenance, as well as client training for IT product usage. Experience working with international clients and testing software functionality across different language versions.
+                    Multilingual IT Specialist with extensive experience in technical support, process automation, and AI-driven solutions for clients and digital workflows. Expert in problem diagnosis, software and hardware configuration, chatbot development, and client training for IT product usage. Specialized in automation tools (Make.com), AI integration (ChatGPT, Claude), and bot development for Telegram and WhatsApp. Experience working with international clients and testing software functionality across different language versions.
                 </p>
             </section>
 
@@ -492,7 +510,7 @@
                         <span>Advanced</span>
                     </div>
                     <div class="language">
-                        <span><strong><span class="country-flag flag-gb"></span>English</strong></span>
+                        <span><strong><span class="country-flag flag-us"></span>English</strong></span>
                         <span>Intermediate</span>
                     </div>
                 </div>
@@ -546,27 +564,27 @@
                 <h2 class="section-title">Core Competencies</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
+                        <h4>Digital Automation & AI</h4>
+                        <div class="skill-list">
+                            Telegram & WhatsApp bot development, Process automation (Make.com), ChatGPT & Claude AI integration, Workflow optimization, Customer support chatbots, Social media automation
+                        </div>
+                    </div>
+                    <div class="skill-category">
                         <h4>Technical Support</h4>
                         <div class="skill-list">
                             Problem diagnosis, Software/Hardware configuration, Customer support, Remote support, Technical troubleshooting
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Localization & QA Testing</h4>
+                        <h4>Web Development & Design</h4>
                         <div class="skill-list">
-                            Localization testing, Cross-language QA, Bug identification and reporting, Test case execution, Linguistic quality assurance, Multilingual interface testing
+                            WordPress, Wix, Tilda web development, UI/UX design (Canva), Video content creation (Movavi), Microsoft Office/Excel advanced, Data analysis
                         </div>
                     </div>
                     <div class="skill-category">
                         <h4>Tools & Technologies</h4>
                         <div class="skill-list">
-                            Office 365, Atlassian JIRA, Monday CRM, Microsoft Teams, VPN, OLAP, Remote Desktop, ServiceNow
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Project Management</h4>
-                        <div class="skill-list">
-                            Team leadership, Strategic planning, Process optimization, Stakeholder coordination, Digital marketing
+                            Make.com, SendPulse, Monday CRM, Microsoft Teams, ChatGPT API, Claude API, VPN, OLAP, Remote Desktop, ServiceNow, Linux administration
                         </div>
                     </div>
                 </div>
