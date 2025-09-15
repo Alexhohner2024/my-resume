@@ -146,36 +146,6 @@
         .flag-ca { 
             background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/20px-Flag_of_Canada_%28Pantone%29.svg.png') center/cover;
         }
-        .flag-us { 
-            background: linear-gradient(to bottom, 
-                #b22234 0%, #b22234 7.7%, 
-                white 7.7%, white 15.4%, 
-                #b22234 15.4%, #b22234 23.1%, 
-                white 23.1%, white 30.8%, 
-                #b22234 30.8%, #b22234 38.5%, 
-                white 38.5%, white 46.2%, 
-                #b22234 46.2%, #b22234 53.9%, 
-                white 53.9%, white 61.6%, 
-                #b22234 61.6%, #b22234 69.3%, 
-                white 69.3%, white 77%, 
-                #b22234 77%, #b22234 84.7%, 
-                white 84.7%, white 92.4%, 
-                #b22234 92.4%);
-            position: relative;
-        }
-        .flag-us::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 40%;
-            height: 54%;
-            background: #3c3b6e;
-        }
-        .flag-world { 
-            background: linear-gradient(45deg, #4a90e2, #7cb342, #f4b400, #db4437);
-            border-radius: 50%;
-        }
         
         .job-date {
             font-size: 14px;
@@ -299,7 +269,7 @@
                 </div>
                 <div class="contact-item">
                     <a href="https://www.linkedin.com/in/oleksandr-babaian-83a803151" target="_blank" style="color: white; text-decoration: none;">
-                        <span style="font-size: 16px;">💼</span> LinkedIn
+                        <span>💼</span> LinkedIn
                     </a>
                 </div>
             </div>
@@ -525,6 +495,123 @@
             </section>
 
             <section class="section">
+                <h2 class="section-title">Projects & Case Studies</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Monday.com CRM & Automation System</div>
+                            <div class="company">
+                                <span>📊</span>
+                                Client Relationship Management Platform
+                            </div>
+                        </div>
+                        <div class="job-date">
+                            <span style="color: #666; font-size: 14px;">Monday.com & Make.com</span>
+                        </div>
+                    </div>
+                    <div class="job-description">
+                        Comprehensive client relationship management platform with automated workflow integration. Manages insurance client database, contract lifecycle, and financial tracking with intelligent automation for contract renewals and commission calculations.
+                        
+                        <div style="margin-top: 15px;">
+                            <strong>Key Features:</strong>
+                            <ul style="margin-top: 8px;">
+                                <li>Complete client database management with contract categorization</li>
+                                <li>Automated contract expiration notifications and renewal workflows</li>
+                                <li>Contact information management with communication history</li>
+                                <li>Monthly insurance commission and rewards tracking</li>
+                                <li>Advanced search and filtering capabilities</li>
+                                <li>Data backup and monitoring tools</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-list">
+                            <strong>Technologies:</strong> Monday.com Platform, Make.com API, Workflow Automation, Financial Tracking, Database Management
+                        </div>
+                        
+                        <div style="margin-top: 15px;">
+                            <img src="https://raw.githubusercontent.com/Alexhohner2024/my-resume/main/img3.JPG" alt="Monday.com CRM Dashboard" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Insurance Automation Bot</div>
+                            <div class="company">
+                                <span>🤖</span>
+                                Automated Insurance Processing Workflow
+                            </div>
+                        </div>
+                        <div class="job-date">
+                            <span style="color: #666; font-size: 14px;">Make.com Automation</span>
+                        </div>
+                    </div>
+                    <div class="job-description">
+                        Automated workflow for processing insurance documents via Telegram integration. Receives PDF insurance documents, extracts key data, and automatically updates Monday.com dashboard with policy information and client notifications.
+                        
+                        <div style="margin-top: 15px;">
+                            <strong>Key Features:</strong>
+                            <ul style="margin-top: 8px;">
+                                <li>PDF document processing via Telegram bot</li>
+                                <li>Automated data extraction using PDF-Extractor service</li>
+                                <li>Monday.com CRM integration and file upload</li>
+                                <li>AI-generated client notification messages</li>
+                                <li>End-to-end insurance policy management</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-list">
+                            <strong>Technologies:</strong> Telegram Bot API, Make.com, Monday.com API, Anthropic Claude API, Serverless Architecture
+                        </div>
+                        
+                        <div style="margin-top: 15px;">
+                            <img src="https://raw.githubusercontent.com/Alexhohner2024/my-resume/main/image1.JPG" alt="Insurance Automation Workflow" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">PDF-Extractor</div>
+                            <div class="company">
+                                <span>📄</span>
+                                Automated Document Processing Tool
+                            </div>
+                        </div>
+                        <div class="job-date">
+                            <a href="https://github.com/Alexhohner2024/pdf-extractor" target="_blank" style="color: #3498db; text-decoration: none;">
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                    <div class="job-description">
+                        Automated tool for extracting key data from PDF documents. Parses uploaded PDF files and extracts structured data using regex patterns for further processing in business workflows.
+                        
+                        <div style="margin-top: 15px;">
+                            <strong>Key Features:</strong>
+                            <ul style="margin-top: 8px;">
+                                <li>PDF parsing via API endpoint</li>
+                                <li>Structured data extraction using customizable regex patterns</li>
+                                <li>Returns data formatted for automated processing</li>
+                                <li>Serverless deployment ready</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skills-list">
+                            <strong>Technologies:</strong> JavaScript, pdf-parse, Vercel, Serverless Architecture, API Development, Regex Patterns
+                        </div>
+                        
+                        <div style="margin-top: 15px;">
+                            <img src="https://raw.githubusercontent.com/Alexhohner2024/my-resume/main/img2.JPG" alt="PDF Extractor API Response" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
                 <h2 class="section-title">Languages</h2>
                 <div class="languages">
                     <div class="language">
@@ -544,7 +631,7 @@
                         <span>Advanced</span>
                     </div>
                     <div class="language">
-                        <span><strong><span class="country-flag flag-us"></span>English</strong></span>
+                        <span><strong>🇺🇸 English</strong></span>
                         <span>Intermediate</span>
                     </div>
                 </div>
@@ -623,62 +710,14 @@
                     </div>
                 </div>
             </section>
-
-            <section class="section">
-                <h2 class="section-title">Projects & Case Studies</h2>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Monday.com CRM & Automation System</div>
-                            <div class="company">
-                                <span>📊</span>
-                                Client Relationship Management Platform
-                            </div>
-                        </div>
-                        <div class="job-date">
-                            <span style="color: #666; font-size: 14px;">Monday.com & Make.com</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        Comprehensive client relationship management platform with automated workflow integration. Manages insurance client database, contract lifecycle, and financial tracking with intelligent automation for contract renewals and commission calculations.
-                        
-                        <div style="margin-top: 15px;">
-                            <strong>Key Features:</strong>
-                            <ul style="margin-top: 8px;">
-                                <li>PDF parsing via API endpoint</li>
-                                <li>Structured data extraction using customizable regex patterns</li>
-                                <li>Returns data formatted for automated processing</li>
-                                <li>Serverless deployment ready</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="skills-list">
-                            <strong>Technologies:</strong> 
-                            <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;"> JavaScript, 
-                            📄 pdf-parse, 
-                            <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Vercel" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;"> Vercel, 
-                            ⚡ Serverless Architecture, 
-                            🔌 API Development, 
-                            🔍 Regex Patterns
-                        </div>
-                        
-                        <div style="margin-top: 15px;">
-                            <img src="https://raw.githubusercontent.com/Alexhohner2024/my-resume/main/img2.JPG" alt="PDF Extractor API Response" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
     </div>
 
     <script>
-        // Add print functionality
         function printResume() {
             window.print();
         }
         
-        // Add download as PDF functionality (requires browser's print to PDF)
         document.addEventListener('keydown', function(e) {
             if (e.ctrlKey && e.key === 'p') {
                 e.preventDefault();
@@ -688,90 +727,3 @@
     </script>
 </body>
 </html>
-                                <li>Complete client database management with contract categorization</li>
-                                <li>Automated contract expiration notifications and renewal workflows</li>
-                                <li>Contact information management with communication history</li>
-                                <li>Monthly insurance commission and rewards tracking</li>
-                                <li>Advanced search and filtering capabilities</li>
-                                <li>Data backup and monitoring tools</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="skills-list">
-                            <strong>Technologies:</strong> 
-                            📊 Monday.com Platform, 
-                            <img src="https://cdn.worldvectorlogo.com/logos/make-4.svg" alt="Make" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;"> Make.com API, 
-                            🔗 Workflow Automation, 
-                            📈 Financial Tracking, 
-                            🗃️ Database Management
-                        </div>
-                        
-                        <div style="margin-top: 15px;">
-                            <img src="https://raw.githubusercontent.com/Alexhohner2024/my-resume/main/img3.JPG" alt="Monday.com CRM Dashboard" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Insurance Automation Bot</div>
-                            <div class="company">
-                                <span>🤖</span>
-                                Automated Insurance Processing Workflow
-                            </div>
-                        </div>
-                        <div class="job-date">
-                            <span style="color: #666; font-size: 14px;">Make.com Automation</span>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        Automated workflow for processing insurance documents via Telegram integration. Receives PDF insurance documents, extracts key data, and automatically updates Monday.com dashboard with policy information and client notifications.
-                        
-                        <div style="margin-top: 15px;">
-                            <strong>Key Features:</strong>
-                            <ul style="margin-top: 8px;">
-                                <li>PDF document processing via Telegram bot</li>
-                                <li>Automated data extraction using PDF-Extractor service</li>
-                                <li>Monday.com CRM integration and file upload</li>
-                                <li>AI-generated client notification messages</li>
-                                <li>End-to-end insurance policy management</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="skills-list">
-                            <strong>Technologies:</strong> 
-                            🤖 Telegram Bot API, 
-                            <img src="https://cdn.worldvectorlogo.com/logos/make-4.svg" alt="Make" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;"> Make.com, 
-                            📊 Monday.com API, 
-                            🧠 Anthropic Claude API, 
-                            ⚡ Serverless Architecture
-                        </div>
-                        
-                        <div style="margin-top: 15px;">
-                            <img src="https://raw.githubusercontent.com/Alexhohner2024/my-resume/main/image1.JPG" alt="Insurance Automation Workflow" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">PDF-Extractor</div>
-                            <div class="company">
-                                <span>📄</span>
-                                Automated Document Processing Tool
-                            </div>
-                        </div>
-                        <div class="job-date">
-                            <a href="https://github.com/Alexhohner2024/pdf-extractor" target="_blank" style="color: #3498db; text-decoration: none;">
-                                GitHub Repository
-                            </a>
-                        </div>
-                    </div>
-                    <div class="job-description">
-                        Automated tool for extracting key data from PDF documents. Parses uploaded PDF files and extracts structured data using regex patterns for further processing in business workflows.
-                        
-                        <div style="margin-top: 15px;">
-                            <strong>Key Features:</strong>
-                            <ul style="margin-top: 8px;">
